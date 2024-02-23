@@ -9,6 +9,8 @@ body {
   padding: 0;
 }
 
+/* HOMEPAGE */
+
 .btn-homepage {
   background-color: #212529;
   border: 1px solid white;
@@ -58,6 +60,38 @@ footer a:hover {
   color: #dee2e6;
 }
 
+
+/* PROFILE PAGE */
+
+.profile-container {
+    max-width: 40%;
+    margin-inline: auto;
+    margin-top: 5em;
+}
+
+
+.img-container {
+    width: 120px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.btn-profile {
+    background-color: #212529;
+    border: 1px solid white;
+    padding: 0.2em 1em;
+    font-weight: bold;
+  }
+  
+  .btn-profile:hover {
+    background-color: black;
+  }
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;
@@ -90,3 +124,5 @@ footer a:hover {
 .carousel-inner .carousel-item-start {
   transform: translateX(0);
 }
+
+
