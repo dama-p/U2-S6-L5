@@ -23,44 +23,78 @@
 
     <!-- START PROFILE CONTENT -->
 
-    <div class="profile-container">
-      <h1 class="border-bottom pb-2">Edit Profile</h1>
+    <div class="container">
+      <div class="row">
+        <div class="profile-container col-12 col-md-10 col-lg-7 col-xl-6 mx-auto">
+          <h1 class="border-bottom pb-2">Edit Profile</h1>
 
-      <div class="profile-content gap-3 d-flex mt-4">
-        <div class="img-container"><img src="./assets/assets/avatar.png" /></div>
+          <div class="profile-content gap-3 d-flex mt-4">
+            <div class="img-container"><img src="./assets/assets/avatar.png" /></div>
 
-        
-        <div class="text-container d-flex flex-grow-1 flex-column">
-            <!--  START OF CONTENT SECTIONS -->
+            <div class="text-container d-flex flex-grow-1 flex-column">
+              <!--  START OF CONTENT SECTIONS -->
 
-          <div class="text-section-1 d-flex flex-column flex-grow-1 justify-content-between border-bottom pb-4">
-            <div class="bg-secondary p-2">Strive Student</div>
-            <p>Language:</p>
-            <div class="dropdown">
-              <button class="btn-profile dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                English
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-              </ul>
+              <div class="text-section-1 d-flex flex-column flex-grow-1 justify-content-between border-bottom pb-4">
+                <div class="section-title p-2 ps-3 mb-3 fs-5">Strive Student</div>
+
+                <div class="mt-auto mb-1 fs-5">Language:</div>
+                <div class="dropdown">
+                  <button
+                    class="btn-profile dropdown-toggle bg-black text-white px-3 py-1"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    English
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                    <li><a class="dropdown-item" href="#">Dutch</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">View more</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- END OF SECTION 1 -->
+
+              <div class="text-section-2 pt-4 border-bottom pb-4">
+                <p class="fs-5">Maturity settings:</p>
+                <button class="btn-profile2 p-2 px-3 mb-3 fs-6 border border-0 fw-bold">ALL MATURITY RATINGS</button>
+                <p>Show titles of <span class="fw-bold">all maturity ratings</span> for this profile.</p>
+                <button class="btn-profile">EDIT</button>
+              </div>
+
+              <!-- END OF SECTION 2 -->
+
+              <div class="text-section-3 pt-4">
+                <p class="fs-5">Autoplay controls</p>
+                <div class="form-check my-2">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                  <label class="form-check-label ms-2" for="defaultCheck1">
+                    Autoplay next episode in a series on all devices.
+                  </label>
+                </div>
+                <div class="form-check my-2">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" />
+                  <label class="form-check-label ms-2" for="defaultCheck2">
+                    Autoplay previews while browsing on all devices.
+                  </label>
+                </div>
+              </div>
+
+              <!-- END OF SECTION 3 -->
             </div>
           </div>
 
-          <!-- END OF SECTION 1 -->
+          <!-- BUTTONS -->
 
-          <div class="text-section-2 pt-4">
-              <p class="fs-5">Maturity settings:</p>
-            <button class="text-bg-secondary p-2 mb-2 fs-6 border border-0 fw-bold">ALL MATURITY RATINGS</button>
-            <p>Show all maturity ratings</p>
-
-            
+          <div class="btn-section border-top mt-4 p-4 d-flex justify-content-between fs-5">
+            <button class="btn-profile bg-white text-black">SAVE</button>
+            <button class="btn-profile">CANCEL</button>
+            <button class="btn-profile">DELETE PROFILE</button>
           </div>
-
-          <!-- END OF SECTION 1 -->
         </div>
       </div>
     </div>
